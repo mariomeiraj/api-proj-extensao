@@ -13,7 +13,7 @@ app.get('/test', (req, res) => {
 })
 
 app.use('/', user)
-
+const PORT = process.env.PORT || 10000
 app.listen(process.env.PORT, () => {
 	console.log(`🏃 - Server running on port: ${process.env.PORT}.`)
 })
